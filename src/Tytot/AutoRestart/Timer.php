@@ -29,7 +29,7 @@ class Timer extends PluginTask{
 			$this->getServer()->broadcastMessage(TextFormat::RED ."PotatoCraft is restarting in 10 seconds!");
 				sleep(9);
 			$this->getServer()->broadcastMessage(TextFormat::RED ."PotatoCraft is restarting NOW!");
-				$p->kick("PotatoCraft restarted!);
+				$p->kick("PotatoCraft restarted!");
 				sleep(1);
 			$this->getServer()->shutdown();
 			return;

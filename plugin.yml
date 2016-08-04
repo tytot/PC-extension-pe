@@ -1,0 +1,4 @@
+name: PCExtension
+main: Tytot\PCExtension\Main
+version: 1.0.0
+api: 2.0.0

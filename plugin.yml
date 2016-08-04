@@ -1,4 +1,4 @@
-name: PCExtension
-main: Tytot\PCExtension\Main
+name: AutoRestart
+main: Tytot\AutoRestart\Main
 version: 1.0.0
 api: 2.0.0

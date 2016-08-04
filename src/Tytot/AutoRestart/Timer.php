@@ -3,6 +3,7 @@
 namespace Tytot\AutoRestart;
 
 use pocketmine\Server;
+use pocketmine\Player;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\utils\TextFormat;
 

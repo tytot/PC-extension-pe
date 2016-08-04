@@ -24,16 +24,16 @@ class Timer extends PluginTask{
 			$hours = floor(($time % (3600 * 24)) / 3600);
 		}
 		if($minutes >= 58 && $hours == 1){
-			$this->plugin->seconds -= 1;
-			if($this->plugin->seconds > 1){
+			$this->plugin->sec -= 1;
+			if($this->plugin->sec > 1){
 				foreach($this->plugin->getServer()->getPlayers() as $p){
-					$p->sendMessage(TextFormat::RED ."PotatoCraft restarts in ".$this->plugin->seconds." seconds!");
+					$p->sendMessage(TextFormat::RED ."PotatoCraft restarts in ".$this->plugin->sec." seconds!");
 				}
-			}elseif($this->plugin->seconds == 1){
+			}elseif($this->plugin->sec == 1){
 				foreach($this->plugin->getServer()->getPlayers() as $p){
 					$p->sendMessage(TextFormat::RED ."PotatoCraft is restarting now!");
 				}
-			}elseif($this->plugin->seconds == 0){
+			}elseif($this->plugin->sec == 0){
 				$this->getServer()->shutdown();
 				return;
 			}
